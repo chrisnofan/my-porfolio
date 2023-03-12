@@ -45,3 +45,59 @@ header h1 {
   padding-left: 20px;
   /* border: 5px solid orange */
 }
+
+.projectAreaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+    "project1 project1"
+    "project2 project3"
+    "project4 project5";
+}
+
+.gridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+  background-color: plum;
+  border-radius: 5px;
+  position: relative;
+  /* border: 10px solid white; */
+}
+
+#project1 {
+  grid-area: project1;
+  background-image: url("../../images/project1.PNG");
+  background-position: top;
+}
+
+#project2 {
+  grid-area: project2;
+  background-image: url("../../images/project2.PNG");
+  background-position: top;
+  object-fit: cover;
+}
+
+#project3 {
+  grid-area: project3;
+  background-image: url("../../images/02-portfolio-2.jpg");
+  background-position: top;
+  object-fit: cover;
+}
+
+#project4 {
+  grid-area: project4;
+  background-image: url("../../images/02-portfolio-3.jpg");
+  background-position: top;
+}
+
+#project5 {
+  grid-area: project5;
+  background-image: url("../../images/02-portfolio-4.jpg");
+  background-position: top;
+}
