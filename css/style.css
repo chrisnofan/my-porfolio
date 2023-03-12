@@ -10,6 +10,18 @@
 body {
   background-color: blanchedalmond;
 }
+#bio {
+  width: 800px;
+  
+}
+
+#bio p{
+  border: 50px;
+  padding: 20px;
+  font-size: 1.2rem;
+  justify-content: center;
+  color: var(--ticolor);
+}
 
 .title {
   border: 200px;
