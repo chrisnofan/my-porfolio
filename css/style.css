@@ -195,3 +195,32 @@ footer ul li a {
   font-weight: bold;
 }
 
+/* Adding responsiveness to page  */
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  body {
+    background-color: red;
+    
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+    
+  }
+
+  #projectAreaGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 80vw;
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3"
+      "project4"
+      "projet5"
+    ;
+  }
+}
