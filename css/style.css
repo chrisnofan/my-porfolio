@@ -1,7 +1,9 @@
 :root{
 
-  --light: blueviolet;
-  --ticolor: brown;
+  --light: #f39c12;
+  --ticolor: #9b59b6;
+  --tlgre: #1abc9c;
+  --borline: #e67e22;
 }
 
 /* Styles the background */
@@ -11,7 +13,7 @@ body {
 
 .title {
   border: 200px;
-  color: var;
+  color: var(--light);
   padding: 20px;
 }
 .logo {
@@ -19,7 +21,7 @@ body {
 }
 
 #hero {
-  color: blueviolet;
+  color: var(--ticolor) ;
 }
 
 .logo img {
@@ -32,7 +34,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid var(--borline);
 }
 
 header nav {
@@ -52,18 +54,20 @@ header nav ul li a {
   margin: 20px 20px 0 0;
   font-weight: bold;
   text-decoration: none;
-  color: blueviolet;
+  color: var(--light);
 }
 header h1 {
   font-size: 40px;
   font-weight: bold;
-  color: blueviolet;
+  color: var(--light);
   padding-left: 20px;
   /* border: 5px solid orange */
 }
 
 .heading a {
   text-decoration: none;
+
+/* styling of the main portfolio section  */
 }
 .projectAreaGrid {
   display: grid;
@@ -129,7 +133,11 @@ header h1 {
   border-radius: 0 0 5px 5px;
   font-size: 1.5rem;
 }
+#work{
+  border-bottom: 10px solid var(--borline);
+}
 
+/* styling of the footer section */
 footer {
   display: flex;
   justify-content: space-between;
@@ -162,17 +170,14 @@ footer ul li {
   margin: 10px 20px 0 0;
   font-weight: bold;
   text-decoration: none;
-  color: blueviolet;
+  color: var(--light);
 
 }
 
 footer ul li a {
   text-decoration: none;
-  color: blueviolet;
+  color: var(--light);
   padding: 8px;
   font-weight: bold;
 }
 
-#work{
-  border-bottom: 10px solid black;
-}
